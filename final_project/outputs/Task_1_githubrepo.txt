@@ -1,0 +1,58 @@
+TASK 1: GitHub Repository Fork Verification
+=============================================
+
+This project is based on the skeleton code from:
+IBM Developer Skills Network - expressBookReviews Repository
+
+Original Repository: https://github.com/ibm-developer-skills-network/expressBookReviews
+
+To verify your fork, use the following GitHub API cURL command:
+
+OPTION 1: Check Repository Information
+Command:
+curl -s https://api.github.com/repos/YOUR_GITHUB_USERNAME/expressBookReviews | jq '.{name: .name, description: .description, fork: .fork, parent: .parent.full_name}'
+
+Expected Output (after forking):
+{
+  "name": "expressBookReviews",
+  "description": "An online bookstore with book review system",
+  "fork": true,
+  "parent": "ibm-developer-skills-network/expressBookReviews"
+}
+
+OPTION 2: Verify Fork Relationship
+Command:
+curl -s https://api.github.com/repos/YOUR_GITHUB_USERNAME/expressBookReviews | jq '.fork, .parent.full_name'
+
+Expected Output:
+true
+"ibm-developer-skills-network/expressBookReviews"
+
+OPTION 3: Get Full Repository Details (includes fork information)
+Command:
+curl -s https://api.github.com/repos/YOUR_GITHUB_USERNAME/expressBookReviews | jq '.'
+
+INSTRUCTIONS TO COMPLETE TASK 1:
+
+1. Go to https://github.com/ibm-developer-skills-network/expressBookReviews
+2. Click the "Fork" button in the top-right corner
+3. Select your account as the destination
+4. GitHub will create a copy at: https://github.com/YOUR_USERNAME/expressBookReviews
+5. Clone it locally:
+   git clone https://github.com/YOUR_USERNAME/expressBookReviews
+6. Navigate to the repository and run the cURL commands above
+7. Your username is shown in the "fork": true and parent field
+
+EXAMPLE OUTPUT (Replace YOUR_USERNAME with your actual GitHub username):
+
+$ curl -s https://api.github.com/repos/john-doe/expressBookReviews | jq '.{name: .name, fork: .fork, parent: .parent.full_name}'
+{
+  "name": "expressBookReviews",
+  "fork": true,
+  "parent": "ibm-developer-skills-network/expressBookReviews"
+}
+
+This proves that the repository at jane-smith/expressBookReviews is a fork of 
+ibm-developer-skills-network/expressBookReviews.
+
+STATUS: Complete when you fork the repo and run the verification command
