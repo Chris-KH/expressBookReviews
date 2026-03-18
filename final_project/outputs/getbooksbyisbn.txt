@@ -1,0 +1,17 @@
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+
+HTTP/1.1 200 OK
+  0      0   0      0   0      0      0      0                              0
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 90
+ETag: W/"5a-6szzTiTLgpMu/PIiXMVabSExJOI"
+Date: Wed, 18 Mar 2026 08:15:59 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+100     90 100     90   0      0  27264      0                              0
+100     90 100     90   0      0  26865      0                              0
+100     90 100     90   0      0  26455      0                              0
+{"isbn":"9780141439570","author":"Chinua Achebe","title":"Things Fall Apart","reviews":{}}

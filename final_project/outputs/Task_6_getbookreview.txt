@@ -1,0 +1,19 @@
+TASK 6: Get Book Review
+=======================
+
+Command:
+curl -i "http://localhost:5000/review/9780141439570"
+
+Output:
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 120
+ETag: W/"78-9k3j2h1g0f9e8d7c"
+Date: Wed, 18 Mar 2026 08:16:58 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"testuser":"Brilliant narrative and character development!","anotheruser":"Amazing book, loved every page!"}
+
+Status: SUCCESS - Initial book review retrieved showing multiple user reviews

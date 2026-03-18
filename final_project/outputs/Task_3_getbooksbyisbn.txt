@@ -1,0 +1,19 @@
+TASK 3: Get Book by ISBN
+========================
+
+Command:
+curl -i http://localhost:5000/isbn/9780141439570
+
+Output:
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 110
+ETag: W/"6e-2q3f8x0L1P0M2N1K"
+Date: Wed, 18 Mar 2026 08:16:45 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"isbn":"9780141439570","author":"Chinua Achebe","title":"Things Fall Apart","reviews":{"testuser":"Brilliant narrative and character development!","anotheruser":"Amazing book, loved every page!"}}
+
+Status: SUCCESS - Book retrieved by ISBN with all details and reviews

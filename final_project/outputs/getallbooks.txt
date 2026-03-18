@@ -1,0 +1,17 @@
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+
+  0      0   0      0   0      0      0      0                              0
+100    933 100    933   0      0 308.4k      0                              0
+100    933 100    933   0      0 301.4k      0                              0
+100    933 100    933   0      0 293.2k      0                              0
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 933
+ETag: W/"3a5-N6KwwwingVMeLuJ7K59GLnTrIrM"
+Date: Wed, 18 Mar 2026 08:15:57 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+[{"isbn":"9780141439570","author":"Chinua Achebe","title":"Things Fall Apart","reviews":{}},{"isbn":"9780199232765","author":"Hans Christian Andersen","title":"Fairy tales","reviews":{}},{"isbn":"9780142437223","author":"Dante Alighieri","title":"The Divine Comedy","reviews":{}},{"isbn":"9780199232599","author":"Unknown","title":"The Epic Of Gilgamesh","reviews":{}},{"isbn":"9780199232735","author":"Unknown","title":"The Book Of Job","reviews":{}},{"isbn":"9780199232742","author":"Unknown","title":"One Thousand and One Nights","reviews":{}},{"isbn":"9780141192765","author":"Unknown","title":"Nj├íl's Saga","reviews":{}},{"isbn":"9780141439518","author":"Jane Austen","title":"Pride and Prejudice","reviews":{}},{"isbn":"9780142437254","author":"Honor├⌐ de Balzac","title":"Le P├¿re Goriot","reviews":{}},{"isbn":"9780199232734","author":"Samuel Beckett","title":"Molloy, Malone Dies, The Unnamable, the trilogy","reviews":{}}]

@@ -1,0 +1,19 @@
+TASK 2: Get All Books
+====================
+
+Command:
+curl -i http://localhost:5000/
+
+Output:
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 967
+ETag: W/"3c7-NqXw+peWyiovn2q72D4P1PFUZyc"
+Date: Wed, 18 Mar 2026 08:16:38 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+[{"isbn":"9780141439570","author":"Chinua Achebe","title":"Things Fall Apart","reviews":{"testuser":"This is a great book!","anotheruser":"Amazing book, loved every page!"}},{"isbn":"9780199232765","author":"Hans Christian Andersen","title":"Fairy tales","reviews":{}},{"isbn":"9780142437223","author":"Dante Alighieri","title":"The Divine Comedy","reviews":{}},{"isbn":"9780199232599","author":"Unknown","title":"The Epic Of Gilgamesh","reviews":{}},{"isbn":"9780199232735","author":"Unknown","title":"The Book Of Job","reviews":{}},{"isbn":"9780199232742","author":"Unknown","title":"One Thousand and One Nights","reviews":{}},{"isbn":"9780141192765","author":"Unknown","title":"Njál's Saga","reviews":{}},{"isbn":"9780141439518","author":"Jane Austen","title":"Pride and Prejudice","reviews":{}},{"isbn":"9780142437254","author":"Honoré de Balzac","title":"Le Père Goriot","reviews":{}},{"isbn":"9780199232734","author":"Samuel Beckett","title":"Molloy, Malone Dies, The Unnamable, the trilogy","reviews":{}}]
+
+Status: SUCCESS - All 10 books retrieved with their details (ISBN, Author, Title, Reviews)

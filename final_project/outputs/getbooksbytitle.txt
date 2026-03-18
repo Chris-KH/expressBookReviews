@@ -1,0 +1,17 @@
+  % Total    % Received % Xferd  Average Speed  Time    Time    Time   Current
+                                 Dload  Upload  Total   Spent   Left   Speed
+
+  0      0   0      0   0      0      0      0                              0
+100     92 100     92   0      0  19742      0                              0
+100     92 100     92   0      0  19380      0                              0
+100     92 100     92   0      0  19067      0                              0
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 92
+ETag: W/"5c-ndK6no7SwrwajUxiuZtWX/vXqh8"
+Date: Wed, 18 Mar 2026 08:16:05 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+[{"isbn":"9780141439518","author":"Jane Austen","title":"Pride and Prejudice","reviews":{}}]

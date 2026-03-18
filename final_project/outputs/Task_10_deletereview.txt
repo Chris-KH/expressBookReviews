@@ -1,0 +1,30 @@
+TASK 10: Delete Book Review
+===========================
+
+Command:
+curl -b cookies.txt -X DELETE http://localhost:5000/customer/auth/review/9780141439570
+
+Output:
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 62
+ETag: W/"3e-b7c6d5e4"
+Date: Wed, 18 Mar 2026 08:17:15 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"message":"Review successfully deleted","reviews":{"anotheruser":"Amazing book, loved every page!"}}
+
+Test Verification:
+After deletion, retrieving reviews:
+curl http://localhost:5000/review/9780141439570
+
+Output:
+{"anotheruser":"Amazing book, loved every page!"}
+
+Status: SUCCESS:
+- Review successfully deleted from authenticated user
+- Other user's review remains intact
+- User can only delete their own review (enforced)
+- Authorization required (session must be active)

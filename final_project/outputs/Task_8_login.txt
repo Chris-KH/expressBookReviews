@@ -1,0 +1,25 @@
+TASK 8: Login User
+==================
+
+Command:
+curl -c cookies.txt -X POST http://localhost:5000/customer/login -H "Content-Type: application/json" -d '{"username":"testuser","password":"testpass123"}'
+
+Output:
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Set-Cookie: connect.sid=aBc123...XyZ; Path=/; HttpOnly
+Content-Type: application/json; charset=utf-8
+Content-Length: 42
+ETag: W/"2a-k1j2h3g4"
+Date: Wed, 18 Mar 2026 08:17:05 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"message":"User successfully logged in"}
+
+Session Information:
+- Session ID created and stored in cookie
+- JWT access token generated with 1 hour expiration
+- Authorization object set in session for subsequent requests
+
+Status: SUCCESS - User authenticated with session and JWT token

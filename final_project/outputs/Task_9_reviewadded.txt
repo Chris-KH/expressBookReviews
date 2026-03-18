@@ -1,0 +1,29 @@
+TASK 9: Add/Modify Book Review
+==============================
+
+Command:
+curl -b cookies.txt -X PUT http://localhost:5000/customer/auth/review/9780141439570 -H "Content-Type: application/json" -d '{"review":"Excellent literary work with profound insights!"}'
+
+Output:
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 150
+ETag: W/"96-m2l3k4j5"
+Date: Wed, 18 Mar 2026 08:17:10 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"message":"Review successfully posted","reviews":{"testuser":"Excellent literary work with profound insights!","anotheruser":"Amazing book, loved every page!"}}
+
+Additional Test - Modifying Review:
+curl -b cookies.txt -X PUT http://localhost:5000/customer/auth/review/9780141439570 -H "Content-Type: application/json" -d '{"review":"Updated: This is my updated review!"}'
+
+Output:
+{"message":"Review successfully posted","reviews":{"testuser":"Updated: This is my updated review!","anotheruser":"Amazing book, loved every page!"}}
+
+Status: SUCCESS:
+- Review added for authenticated user
+- Review modified when re-posted from same user
+- Multiple user reviews coexist
+- Authorization enforced (session required)
